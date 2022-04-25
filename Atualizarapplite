@@ -1,1 +1,86 @@
-teste
+{
+  "Version": "1.0.0",
+  "ReleaseNotes": "",
+  "UrlUpdate": "https://raw.githubusercontent.com/serginhovsc/mixcell/main/Atualizarapplite",
+  "Sms": "https://raw.githubusercontent.com/serginhovsc/mixcell/main/sms",
+  "EmailFeedback": "contato@sergiohost.com.br",
+  "UrlContato": "https://api.whatsapp.com/send?phone=5561999214226",
+  "UrlTermos": "https://grupoapps.com.br/politicas.html",
+  "CheckUser": "true",
+  "Udp": [
+    {
+      "Porta": "7300"
+    },
+    {
+      "Porta": "7200"
+    },
+    {
+      "Porta": "7100"
+    }
+  ],
+  "Servers": [
+    {
+      "Name": "BR01",
+      "TYPE": "Premium",
+      "FLAG": "br.png",
+      "ServerIP": "br.mixcell.xyz",
+      "CheckUser": "http://vps.mixcell.xyz:6889/checkUser",
+      "ServerPort": "22",
+      "SSLPort": "443",
+      "USER": "",
+      "PASS": ""
+    }
+  ],
+  "Networks": [
+    {
+      "Name": "VIVO WS",
+      "FLAG": "vivo",
+      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "[app_host]",
+      "TlsIP": "104.18.7.80",
+      "ProxyIP": "",
+      "ProxyPort": "80",
+      "Info": "Tlsws"
+    },
+    {
+      "Name": "TIM SSL 1",
+      "FLAG": "tim",
+      "Payload": "GET ws://mobilidade.cloud.caixa.gov.br HTTP/1.1 [crlf]Host: [rotate=[app_host]][crlf]Proxy-Connection: Keep-Alive[crlf]X-Fo[crlf]Upgrade: websocket[crlf]Connection: upgrade[crlf][crlf]",
+      "SNI": "mobilidade.cloud.caixa.gov.br",
+      "TlsIP": "104.26.5.175",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "SSL"
+    },
+    {
+      "Name": "TIM SSL 2",
+      "FLAG": "tim",
+      "Payload": "GET wss://cdnjs.cloudflare.com/ HTTP/1.1[crlf]Host: vps.mixcell.xyz[crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "cdnjs.cloudflare.com",
+      "TlsIP": "104.16.18.94",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+    },
+    {
+      "Name": "CLARO SSL",
+      "FLAG": "claro",
+      "Payload": "GET ws://mobilidade.cloud.caixa.gov.br HTTP/1.1\nHost: [app_host]\nUpgrade: WebSocket\n\n",
+      "SNI": "mobilidade.cloud.caixa.gov.br",
+      "TlsIP": "mobilidade.cloud.caixa.gov.br",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+    },
+    {
+      "Name": "CLARO SSL2",
+      "FLAG": "claro",
+      "Payload": "GET ws://parceirosclaro.com.br HTTP/1.1\nHost: [app_host]\nUpgrade: WebSocket\n\n",
+      "SNI": "parceirosclaro.com.br",
+      "TlsIP": "parceirosclaro.com.br",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+    }
+  ]
+}
