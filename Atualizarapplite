@@ -1,5 +1,5 @@
 {
-  "Version": "1.0.0",
+  "Version": "2.0.0",
   "ReleaseNotes": "",
   "UrlUpdate": "https://raw.githubusercontent.com/serginhovsc/mixcell/main/Atualizarapplite",
   "Sms": "https://raw.githubusercontent.com/serginhovsc/mixcell/main/sms",
@@ -24,7 +24,7 @@
       "TYPE": "Premium",
       "FLAG": "br.png",
       "ServerIP": "br.mixcell.xyz",
-      "CheckUser": "http://vps.mixcell.xyz:6889/checkUser",
+      "CheckUser": "http://168.138.148.117:6889/checkUser",
       "ServerPort": "22",
       "SSLPort": "443",
       "USER": "",
