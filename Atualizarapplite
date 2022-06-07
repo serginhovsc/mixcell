@@ -1,5 +1,5 @@
 {
-  "Version": "2.0.0",
+  "Version": "2.0.1",
   "ReleaseNotes": "",
   "UrlUpdate": "https://raw.githubusercontent.com/serginhovsc/mixcell/main/Atualizarapplite",
   "Sms": "https://raw.githubusercontent.com/serginhovsc/mixcell/main/sms",
@@ -42,22 +42,12 @@
       "ProxyPort": "80",
       "Info": "Tlsws"
     },
-    {
+        {
       "Name": "TIM SSL 1",
       "FLAG": "tim",
-      "Payload": "GET ws://mobilidade.cloud.caixa.gov.br HTTP/1.1 [crlf]Host: [rotate=[app_host]][crlf]Proxy-Connection: Keep-Alive[crlf]X-Fo[crlf]Upgrade: websocket[crlf]Connection: upgrade[crlf][crlf]",
-      "SNI": "mobilidade.cloud.caixa.gov.br",
+      "Payload": "GET wss://static.r4you.co HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n",
+      "SNI": "static.r4you.co",
       "TlsIP": "104.26.5.175",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "SSL"
-    },
-    {
-      "Name": "TIM SSL 2",
-      "FLAG": "tim",
-      "Payload": "GET wss://cdnjs.cloudflare.com/ HTTP/1.1[crlf]Host: vps.mixcell.xyz[crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "cdnjs.cloudflare.com",
-      "TlsIP": "104.16.18.94",
       "ProxyIP": "",
       "ProxyPort": "",
       "Info": "Tlsws"
